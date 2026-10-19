@@ -1,30 +1,27 @@
-# BOO! — The Haunted Collection
+# BOO! — The Haunted Collection 🎃
 
-**Tiny Haunts. Legendary Stories.**
-
-A free, mobile-friendly pack-ripping and card collecting web app with original premium retro-Halloween card illustrations and real-legend-inspired stories.
+**Tiny Haunts. Legendary Stories.** A free retro-Halloween digital pack-ripping game, with a unique illustrated trading card for every card in the first set.
 
 ## Play
+https://glitchedduck.github.io/boo-haunted-collection/
 
-When GitHub Pages is enabled: https://glitchedduck.github.io/boo-haunted-collection/
+## Series 01: The Midnight Manor
 
-Pages configuration: **Settings → Pages → Deploy from a branch → main → / (root)**.
+- **36 unique illustrated cards:** 21 Ghosts, 7 Tricks and 8 Haunted Locations.
+- Every card now displays a complete illustration and matching title, card number and rarity.
+- All 13 former prototype/placeholder cards were redesigned, including *Cobweb Surprise* (#023) and *The Lady's Chamber* (#029).
+- 6 cards per booster: 3 Common, 2 Uncommon and 1 Rare-or-better.
+- Demo rare-slot odds: 89% Rare, 10% Ultra Rare and 1% Secret Rare (client-side, unaudited).
+- Collection binder and duplicate count are saved locally in the same `boo-haunted-collection-v1` browser storage key as before, so players keep their progress.
+- The game is free: no purchases, trading, prizes or cash value.
 
-## Series 01
+## Files
+- `index.html` — complete game logic and booster wrapper artwork.
+- `assets/premium-card-art.js` — all 36 illustrations embedded for fast, simple GitHub Pages deployment; version 3 avoids old-image caching.
 
-- **36 cards:** 21 Ghosts, 7 Tricks, 8 Haunted Locations
-- Six cards per pack: 3 Common + 2 Uncommon + 1 Rare-or-better
-- Rare-slot odds: 89% Rare, 10% Ultra Rare, 1% Secret Rare (prototype odds only)
-- 23 redesigned premium cards (001–021, 025 and 031), each with a unique scene
-- All other cards keep their existing illustrations until the remaining artwork is commissioned
-- Collector binder and progress saved in the user's browser, with no payments or accounts
+Local package downloads additionally contain individually numbered `.webp` assets and `assets/manifest.json` for future game development.
 
-## Structure
+## Development notes
+This is a pack-opening and collection prototype, not yet a rules-complete competitive trading card game. Ghost stories are folklore/inspiration rather than historical proof. Distinctive illustration scenes were created for this original project, including a set of 13 illustrated scenes adapted into custom card layouts.
 
-- `index.html`: web app, deck data and base artwork for unreplaced cards
-- `assets/premium-card-art.js`: optimized, original image data for the 23 premium cards
-- Optimised artwork is bundled as data URLs for reliable GitHub Pages loading. The downloadable ZIP also contains the individual image files and a manifest.
-
-No build is required. Serve this folder with any static web server.
-
-**Note:** Some characters and locations are inspired by folklore and reported ghost stories, not verified supernatural events. This is a free collecting prototype, not yet a playable battle TCG. No cards have cash value.
+GitHub Pages setup: Settings → Pages → Deploy from branch → main → /(root).
